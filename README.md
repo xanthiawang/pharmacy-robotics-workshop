@@ -2,7 +2,9 @@
 
 使用 URDF Studio 调整药房家具的位置，在 BotLab 观察机械臂和 Handle-L1 灵巧手把药盒放进周转箱。Blender 用于修改模型结构和自由建模。
 
-**[下载完整资产包（ZIP）](https://github.com/xanthiawang/pharmacy-robotics-workshop/archive/0804612e1415b8c72e8e7d2536c6270b3262930e.zip)** · [操作说明](docs/使用说明.md) · [版本页面](https://github.com/xanthiawang/pharmacy-robotics-workshop/releases/tag/v2026.11.18)
+**[下载完整资产包（ZIP）](https://github.com/xanthiawang/pharmacy-robotics-workshop/archive/57692cdaca232402f7645c9124c9ae591c893d98.zip)** · [公开下载网页](https://xanthiawang.github.io/pharmacy-robotics-workshop-public/) · [操作说明](docs/使用说明.md)
+
+[下载 Studio 场景](https://raw.githubusercontent.com/xanthiawang/pharmacy-robotics-workshop/57692cdaca232402f7645c9124c9ae591c893d98/01_%E7%BD%91%E9%A1%B5%E6%93%8D%E4%BD%9C/01_%E8%8D%AF%E6%88%BF%E5%B8%83%E5%B1%80.botscene) · [下载 BotLab 抓取演示](https://raw.githubusercontent.com/xanthiawang/pharmacy-robotics-workshop/57692cdaca232402f7645c9124c9ae591c893d98/01_%E7%BD%91%E9%A1%B5%E6%93%8D%E4%BD%9C/02_%E6%8A%93%E8%8D%AF%E7%9B%92%E5%85%A5%E7%AE%B1.botlab.zip) · [下载 BotLab 手动控制](https://raw.githubusercontent.com/xanthiawang/pharmacy-robotics-workshop/57692cdaca232402f7645c9124c9ae591c893d98/01_%E7%BD%91%E9%A1%B5%E6%93%8D%E4%BD%9C/03_%E6%89%8B%E5%8A%A8%E6%8E%A7%E5%88%B6.botlab.zip)
 
 下载后解压外层 ZIP。内部的 `.botscene` 和 `.botlab.zip` 直接用对应工具打开。
 
@@ -16,4 +18,4 @@
 
 `src/studio_layout_converter.html` 是转换器的开发模板。请从资产包打开已打包的转换页，里面包含 ZIP 处理库、药房模板和运行所需文件。
 
-厂商模型随私有版本供获授权的项目成员使用。关于来源见资产包中的 `02_Blender源工程/licenses/资产来源.md`。
+厂商模型来源见资产包中的 `02_Blender源工程/licenses/资产来源.md`。
