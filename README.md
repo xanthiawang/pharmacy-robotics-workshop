@@ -2,7 +2,7 @@
 
 使用 URDF Studio 调整药房家具的位置，在 BotLab 观察机械臂和 Handle-L1 灵巧手把药盒放进周转箱。Blender 用于修改模型结构和自由建模。
 
-**[下载完整资产包（ZIP）](https://github.com/xanthiawang/pharmacy-robotics-workshop/releases/download/v2026.11.18/pharmacy-workshop-v2026.11.18.zip)** · [操作说明](docs/使用说明.md) · [版本页面](https://github.com/xanthiawang/pharmacy-robotics-workshop/releases/tag/v2026.11.18)
+**[下载完整资产包（ZIP）](https://github.com/xanthiawang/pharmacy-robotics-workshop/archive/0804612e1415b8c72e8e7d2536c6270b3262930e.zip)** · [操作说明](docs/使用说明.md) · [版本页面](https://github.com/xanthiawang/pharmacy-robotics-workshop/releases/tag/v2026.11.18)
 
 下载后解压外层 ZIP。内部的 `.botscene` 和 `.botlab.zip` 直接用对应工具打开。
 
