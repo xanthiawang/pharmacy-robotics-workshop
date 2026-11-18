@@ -1,0 +1,161 @@
+{
+  "version": 2,
+  "room_size_m": [
+    3.6,
+    6.4,
+    2.9
+  ],
+  "nodes": [
+    {
+      "id": "room",
+      "parent": null,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "room",
+      "label": "固定房间",
+      "locked": true
+    },
+    {
+      "id": "room_floor",
+      "parent": "room",
+      "pos": [
+        1.8,
+        3.2,
+        -0.04
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        3.6,
+        6.4,
+        0.08
+      ],
+      "material": "floor",
+      "cutaway": false
+    },
+    {
+      "id": "room_back",
+      "parent": "room",
+      "pos": [
+        1.8,
+        6.44,
+        1.45
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        3.6,
+        0.08,
+        2.9
+      ],
+      "material": "wall",
+      "cutaway": false
+    },
+    {
+      "id": "room_right",
+      "parent": "room",
+      "pos": [
+        3.64,
+        3.2,
+        1.45
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.08,
+        6.4,
+        2.9
+      ],
+      "material": "wall",
+      "cutaway": false
+    },
+    {
+      "id": "room_left",
+      "parent": "room",
+      "pos": [
+        -0.04,
+        3.2,
+        1.45
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.08,
+        6.4,
+        2.9
+      ],
+      "material": "wall",
+      "cutaway": true
+    },
+    {
+      "id": "room_front_left",
+      "parent": "room",
+      "pos": [
+        0.6,
+        -0.04,
+        1.45
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        1.2,
+        0.08,
+        2.9
+      ],
+      "material": "wall",
+      "cutaway": true
+    },
+    {
+      "id": "room_front_right",
+      "parent": "room",
+      "pos": [
+        2.9,
+        -0.04,
+        1.45
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        1.4,
+        0.08,
+        2.9
+      ],
+      "material": "wall",
+      "cutaway": true
+    },
+    {
+      "id": "room_entry_header",
+      "parent": "room",
+      "pos": [
+        1.7,
+        -0.04,
+        2.65
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        1,
+        0.08,
+        0.5
+      ],
+      "material": "wall",
+      "cutaway": true
+    }
+  ],
+  "zones": [],
+  "routes": [],
+  "aisle_width_m": 0.6000000238418579,
+  "description": "Fixed design boundary; dimensions are project assumptions, not site survey.",
+  "robot_hand_profile": "Handle-L1-right-v5"
+}

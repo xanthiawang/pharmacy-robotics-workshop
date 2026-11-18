@@ -1,0 +1,1 @@
+controller_joint_names: ['', 'left_thumb_mcp_roll_joint2', 'left_thumb_mcp_pitch_joint3', 'left_thumb_dip_joint4', 'left_index_mcp_joint5', 'left_index_dip_joint6', 'left_middle_mcp_joint7', 'left_middle_dip_joint8', 'left_ring_mcp_joint9', 'left_ring_dip_joint10', 'left_pinky_mcp_joint11', 'left_pinky_dip_joint12', ]

@@ -1,0 +1,6 @@
+mujoco==3.17.0
+numpy==2.5.5
+pillow==13.0.0
+botlab-python==0.4.1
+onnxruntime==1.32.0
+scipy==1.18.1

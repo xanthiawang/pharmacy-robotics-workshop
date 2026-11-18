@@ -1,0 +1,5344 @@
+{
+  "cabinet": [
+    {
+      "id": "cabinet",
+      "parent": null,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "prototype": "cabinet",
+      "label": "玻璃药柜"
+    },
+    {
+      "id": "cabinet__back",
+      "parent": "cabinet",
+      "pos": [
+        0,
+        0.19,
+        0.95
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.86,
+        0.02,
+        1.9
+      ],
+      "material": "metal"
+    },
+    {
+      "id": "cabinet__side-1",
+      "parent": "cabinet",
+      "pos": [
+        -0.415,
+        0,
+        0.95
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.03,
+        0.4,
+        1.9
+      ],
+      "material": "metal"
+    },
+    {
+      "id": "cabinet__side1",
+      "parent": "cabinet",
+      "pos": [
+        0.415,
+        0,
+        0.95
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.03,
+        0.4,
+        1.9
+      ],
+      "material": "metal"
+    },
+    {
+      "id": "cabinet__cap0.025",
+      "parent": "cabinet",
+      "pos": [
+        0,
+        0,
+        0.025
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.86,
+        0.4,
+        0.03
+      ],
+      "material": "metal"
+    },
+    {
+      "id": "cabinet__cap1.885",
+      "parent": "cabinet",
+      "pos": [
+        0,
+        0,
+        1.885
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.86,
+        0.4,
+        0.03
+      ],
+      "material": "metal"
+    },
+    {
+      "id": "cabinet__shelf0",
+      "parent": "cabinet",
+      "pos": [
+        0,
+        0,
+        0.08
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "shelf",
+      "label": "层板 1"
+    },
+    {
+      "id": "cabinet__shelfplate0",
+      "parent": "cabinet__shelf0",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.8,
+        0.37,
+        0.025
+      ],
+      "material": "metal"
+    },
+    {
+      "id": "cabinet__bin0_-1",
+      "parent": "cabinet__shelf0",
+      "pos": [
+        -0.205,
+        0,
+        0.014
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "prototype": "bin",
+      "label": "周转箱"
+    },
+    {
+      "id": "cabinet__bin0_-1__base",
+      "parent": "cabinet__bin0_-1",
+      "pos": [
+        0,
+        0,
+        0.0025
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.3,
+        0.005
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin0_-1__side-1",
+      "parent": "cabinet__bin0_-1",
+      "pos": [
+        -0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin0_-1__end-1",
+      "parent": "cabinet__bin0_-1",
+      "pos": [
+        0,
+        -0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin0_-1__rimx-1",
+      "parent": "cabinet__bin0_-1",
+      "pos": [
+        0,
+        -0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin0_-1__rimy-1",
+      "parent": "cabinet__bin0_-1",
+      "pos": [
+        -0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin0_-1__side1",
+      "parent": "cabinet__bin0_-1",
+      "pos": [
+        0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin0_-1__end1",
+      "parent": "cabinet__bin0_-1",
+      "pos": [
+        0,
+        0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin0_-1__rimx1",
+      "parent": "cabinet__bin0_-1",
+      "pos": [
+        0,
+        0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin0_-1__rimy1",
+      "parent": "cabinet__bin0_-1",
+      "pos": [
+        0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin0_-1__label",
+      "parent": "cabinet__bin0_-1",
+      "pos": [
+        0,
+        -0.153,
+        0.0884
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.09,
+        0.002,
+        0.035
+      ],
+      "material": "white",
+      "collision": false
+    },
+    {
+      "id": "cabinet__bin0_1",
+      "parent": "cabinet__shelf0",
+      "pos": [
+        0.205,
+        0,
+        0.014
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "prototype": "bin",
+      "label": "周转箱"
+    },
+    {
+      "id": "cabinet__bin0_1__base",
+      "parent": "cabinet__bin0_1",
+      "pos": [
+        0,
+        0,
+        0.0025
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.3,
+        0.005
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin0_1__side-1",
+      "parent": "cabinet__bin0_1",
+      "pos": [
+        -0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin0_1__end-1",
+      "parent": "cabinet__bin0_1",
+      "pos": [
+        0,
+        -0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin0_1__rimx-1",
+      "parent": "cabinet__bin0_1",
+      "pos": [
+        0,
+        -0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin0_1__rimy-1",
+      "parent": "cabinet__bin0_1",
+      "pos": [
+        -0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin0_1__side1",
+      "parent": "cabinet__bin0_1",
+      "pos": [
+        0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin0_1__end1",
+      "parent": "cabinet__bin0_1",
+      "pos": [
+        0,
+        0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin0_1__rimx1",
+      "parent": "cabinet__bin0_1",
+      "pos": [
+        0,
+        0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin0_1__rimy1",
+      "parent": "cabinet__bin0_1",
+      "pos": [
+        0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin0_1__label",
+      "parent": "cabinet__bin0_1",
+      "pos": [
+        0,
+        -0.153,
+        0.0884
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.09,
+        0.002,
+        0.035
+      ],
+      "material": "white",
+      "collision": false
+    },
+    {
+      "id": "cabinet__shelf1",
+      "parent": "cabinet",
+      "pos": [
+        0,
+        0,
+        0.37
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "shelf",
+      "label": "层板 2"
+    },
+    {
+      "id": "cabinet__shelfplate1",
+      "parent": "cabinet__shelf1",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.8,
+        0.37,
+        0.025
+      ],
+      "material": "metal"
+    },
+    {
+      "id": "cabinet__bin1_-1",
+      "parent": "cabinet__shelf1",
+      "pos": [
+        -0.205,
+        0,
+        0.014
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "prototype": "bin",
+      "label": "周转箱"
+    },
+    {
+      "id": "cabinet__bin1_-1__base",
+      "parent": "cabinet__bin1_-1",
+      "pos": [
+        0,
+        0,
+        0.0025
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.3,
+        0.005
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin1_-1__side-1",
+      "parent": "cabinet__bin1_-1",
+      "pos": [
+        -0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin1_-1__end-1",
+      "parent": "cabinet__bin1_-1",
+      "pos": [
+        0,
+        -0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin1_-1__rimx-1",
+      "parent": "cabinet__bin1_-1",
+      "pos": [
+        0,
+        -0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin1_-1__rimy-1",
+      "parent": "cabinet__bin1_-1",
+      "pos": [
+        -0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin1_-1__side1",
+      "parent": "cabinet__bin1_-1",
+      "pos": [
+        0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin1_-1__end1",
+      "parent": "cabinet__bin1_-1",
+      "pos": [
+        0,
+        0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin1_-1__rimx1",
+      "parent": "cabinet__bin1_-1",
+      "pos": [
+        0,
+        0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin1_-1__rimy1",
+      "parent": "cabinet__bin1_-1",
+      "pos": [
+        0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin1_-1__label",
+      "parent": "cabinet__bin1_-1",
+      "pos": [
+        0,
+        -0.153,
+        0.0884
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.09,
+        0.002,
+        0.035
+      ],
+      "material": "white",
+      "collision": false
+    },
+    {
+      "id": "cabinet__bin1_1",
+      "parent": "cabinet__shelf1",
+      "pos": [
+        0.205,
+        0,
+        0.014
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "prototype": "bin",
+      "label": "周转箱"
+    },
+    {
+      "id": "cabinet__bin1_1__base",
+      "parent": "cabinet__bin1_1",
+      "pos": [
+        0,
+        0,
+        0.0025
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.3,
+        0.005
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin1_1__side-1",
+      "parent": "cabinet__bin1_1",
+      "pos": [
+        -0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin1_1__end-1",
+      "parent": "cabinet__bin1_1",
+      "pos": [
+        0,
+        -0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin1_1__rimx-1",
+      "parent": "cabinet__bin1_1",
+      "pos": [
+        0,
+        -0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin1_1__rimy-1",
+      "parent": "cabinet__bin1_1",
+      "pos": [
+        -0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin1_1__side1",
+      "parent": "cabinet__bin1_1",
+      "pos": [
+        0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin1_1__end1",
+      "parent": "cabinet__bin1_1",
+      "pos": [
+        0,
+        0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin1_1__rimx1",
+      "parent": "cabinet__bin1_1",
+      "pos": [
+        0,
+        0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin1_1__rimy1",
+      "parent": "cabinet__bin1_1",
+      "pos": [
+        0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin1_1__label",
+      "parent": "cabinet__bin1_1",
+      "pos": [
+        0,
+        -0.153,
+        0.0884
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.09,
+        0.002,
+        0.035
+      ],
+      "material": "white",
+      "collision": false
+    },
+    {
+      "id": "cabinet__shelf2",
+      "parent": "cabinet",
+      "pos": [
+        0,
+        0,
+        0.6599999999999999
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "shelf",
+      "label": "层板 3"
+    },
+    {
+      "id": "cabinet__shelfplate2",
+      "parent": "cabinet__shelf2",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.8,
+        0.37,
+        0.025
+      ],
+      "material": "metal"
+    },
+    {
+      "id": "cabinet__bin2_-1",
+      "parent": "cabinet__shelf2",
+      "pos": [
+        -0.205,
+        0,
+        0.014
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "prototype": "bin",
+      "label": "周转箱"
+    },
+    {
+      "id": "cabinet__bin2_-1__base",
+      "parent": "cabinet__bin2_-1",
+      "pos": [
+        0,
+        0,
+        0.0025
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.3,
+        0.005
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin2_-1__side-1",
+      "parent": "cabinet__bin2_-1",
+      "pos": [
+        -0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin2_-1__end-1",
+      "parent": "cabinet__bin2_-1",
+      "pos": [
+        0,
+        -0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin2_-1__rimx-1",
+      "parent": "cabinet__bin2_-1",
+      "pos": [
+        0,
+        -0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin2_-1__rimy-1",
+      "parent": "cabinet__bin2_-1",
+      "pos": [
+        -0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin2_-1__side1",
+      "parent": "cabinet__bin2_-1",
+      "pos": [
+        0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin2_-1__end1",
+      "parent": "cabinet__bin2_-1",
+      "pos": [
+        0,
+        0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin2_-1__rimx1",
+      "parent": "cabinet__bin2_-1",
+      "pos": [
+        0,
+        0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin2_-1__rimy1",
+      "parent": "cabinet__bin2_-1",
+      "pos": [
+        0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin2_-1__label",
+      "parent": "cabinet__bin2_-1",
+      "pos": [
+        0,
+        -0.153,
+        0.0884
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.09,
+        0.002,
+        0.035
+      ],
+      "material": "white",
+      "collision": false
+    },
+    {
+      "id": "cabinet__bin2_1",
+      "parent": "cabinet__shelf2",
+      "pos": [
+        0.205,
+        0,
+        0.014
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "prototype": "bin",
+      "label": "周转箱"
+    },
+    {
+      "id": "cabinet__bin2_1__base",
+      "parent": "cabinet__bin2_1",
+      "pos": [
+        0,
+        0,
+        0.0025
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.3,
+        0.005
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin2_1__side-1",
+      "parent": "cabinet__bin2_1",
+      "pos": [
+        -0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin2_1__end-1",
+      "parent": "cabinet__bin2_1",
+      "pos": [
+        0,
+        -0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin2_1__rimx-1",
+      "parent": "cabinet__bin2_1",
+      "pos": [
+        0,
+        -0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin2_1__rimy-1",
+      "parent": "cabinet__bin2_1",
+      "pos": [
+        -0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin2_1__side1",
+      "parent": "cabinet__bin2_1",
+      "pos": [
+        0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin2_1__end1",
+      "parent": "cabinet__bin2_1",
+      "pos": [
+        0,
+        0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin2_1__rimx1",
+      "parent": "cabinet__bin2_1",
+      "pos": [
+        0,
+        0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin2_1__rimy1",
+      "parent": "cabinet__bin2_1",
+      "pos": [
+        0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin2_1__label",
+      "parent": "cabinet__bin2_1",
+      "pos": [
+        0,
+        -0.153,
+        0.0884
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.09,
+        0.002,
+        0.035
+      ],
+      "material": "white",
+      "collision": false
+    },
+    {
+      "id": "cabinet__shelf3",
+      "parent": "cabinet",
+      "pos": [
+        0,
+        0,
+        0.9499999999999998
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "shelf",
+      "label": "层板 4"
+    },
+    {
+      "id": "cabinet__shelfplate3",
+      "parent": "cabinet__shelf3",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.8,
+        0.37,
+        0.025
+      ],
+      "material": "metal"
+    },
+    {
+      "id": "cabinet__bin3_-1",
+      "parent": "cabinet__shelf3",
+      "pos": [
+        -0.205,
+        0,
+        0.014
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "prototype": "bin",
+      "label": "周转箱"
+    },
+    {
+      "id": "cabinet__bin3_-1__base",
+      "parent": "cabinet__bin3_-1",
+      "pos": [
+        0,
+        0,
+        0.0025
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.3,
+        0.005
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin3_-1__side-1",
+      "parent": "cabinet__bin3_-1",
+      "pos": [
+        -0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin3_-1__end-1",
+      "parent": "cabinet__bin3_-1",
+      "pos": [
+        0,
+        -0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin3_-1__rimx-1",
+      "parent": "cabinet__bin3_-1",
+      "pos": [
+        0,
+        -0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin3_-1__rimy-1",
+      "parent": "cabinet__bin3_-1",
+      "pos": [
+        -0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin3_-1__side1",
+      "parent": "cabinet__bin3_-1",
+      "pos": [
+        0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin3_-1__end1",
+      "parent": "cabinet__bin3_-1",
+      "pos": [
+        0,
+        0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin3_-1__rimx1",
+      "parent": "cabinet__bin3_-1",
+      "pos": [
+        0,
+        0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin3_-1__rimy1",
+      "parent": "cabinet__bin3_-1",
+      "pos": [
+        0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin3_-1__label",
+      "parent": "cabinet__bin3_-1",
+      "pos": [
+        0,
+        -0.153,
+        0.0884
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.09,
+        0.002,
+        0.035
+      ],
+      "material": "white",
+      "collision": false
+    },
+    {
+      "id": "cabinet__bin3_1",
+      "parent": "cabinet__shelf3",
+      "pos": [
+        0.205,
+        0,
+        0.014
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "prototype": "bin",
+      "label": "周转箱"
+    },
+    {
+      "id": "cabinet__bin3_1__base",
+      "parent": "cabinet__bin3_1",
+      "pos": [
+        0,
+        0,
+        0.0025
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.3,
+        0.005
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin3_1__side-1",
+      "parent": "cabinet__bin3_1",
+      "pos": [
+        -0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin3_1__end-1",
+      "parent": "cabinet__bin3_1",
+      "pos": [
+        0,
+        -0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin3_1__rimx-1",
+      "parent": "cabinet__bin3_1",
+      "pos": [
+        0,
+        -0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin3_1__rimy-1",
+      "parent": "cabinet__bin3_1",
+      "pos": [
+        -0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin3_1__side1",
+      "parent": "cabinet__bin3_1",
+      "pos": [
+        0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin3_1__end1",
+      "parent": "cabinet__bin3_1",
+      "pos": [
+        0,
+        0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin3_1__rimx1",
+      "parent": "cabinet__bin3_1",
+      "pos": [
+        0,
+        0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin3_1__rimy1",
+      "parent": "cabinet__bin3_1",
+      "pos": [
+        0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin3_1__label",
+      "parent": "cabinet__bin3_1",
+      "pos": [
+        0,
+        -0.153,
+        0.0884
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.09,
+        0.002,
+        0.035
+      ],
+      "material": "white",
+      "collision": false
+    },
+    {
+      "id": "cabinet__shelf4",
+      "parent": "cabinet",
+      "pos": [
+        0,
+        0,
+        1.24
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "shelf",
+      "label": "层板 5"
+    },
+    {
+      "id": "cabinet__shelfplate4",
+      "parent": "cabinet__shelf4",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.8,
+        0.37,
+        0.025
+      ],
+      "material": "metal"
+    },
+    {
+      "id": "cabinet__bin4_-1",
+      "parent": "cabinet__shelf4",
+      "pos": [
+        -0.205,
+        0,
+        0.014
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "prototype": "bin",
+      "label": "周转箱"
+    },
+    {
+      "id": "cabinet__bin4_-1__base",
+      "parent": "cabinet__bin4_-1",
+      "pos": [
+        0,
+        0,
+        0.0025
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.3,
+        0.005
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin4_-1__side-1",
+      "parent": "cabinet__bin4_-1",
+      "pos": [
+        -0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin4_-1__end-1",
+      "parent": "cabinet__bin4_-1",
+      "pos": [
+        0,
+        -0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin4_-1__rimx-1",
+      "parent": "cabinet__bin4_-1",
+      "pos": [
+        0,
+        -0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin4_-1__rimy-1",
+      "parent": "cabinet__bin4_-1",
+      "pos": [
+        -0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin4_-1__side1",
+      "parent": "cabinet__bin4_-1",
+      "pos": [
+        0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin4_-1__end1",
+      "parent": "cabinet__bin4_-1",
+      "pos": [
+        0,
+        0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin4_-1__rimx1",
+      "parent": "cabinet__bin4_-1",
+      "pos": [
+        0,
+        0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin4_-1__rimy1",
+      "parent": "cabinet__bin4_-1",
+      "pos": [
+        0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin4_-1__label",
+      "parent": "cabinet__bin4_-1",
+      "pos": [
+        0,
+        -0.153,
+        0.0884
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.09,
+        0.002,
+        0.035
+      ],
+      "material": "white",
+      "collision": false
+    },
+    {
+      "id": "cabinet__bin4_1",
+      "parent": "cabinet__shelf4",
+      "pos": [
+        0.205,
+        0,
+        0.014
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "prototype": "bin",
+      "label": "周转箱"
+    },
+    {
+      "id": "cabinet__bin4_1__base",
+      "parent": "cabinet__bin4_1",
+      "pos": [
+        0,
+        0,
+        0.0025
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.3,
+        0.005
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin4_1__side-1",
+      "parent": "cabinet__bin4_1",
+      "pos": [
+        -0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin4_1__end-1",
+      "parent": "cabinet__bin4_1",
+      "pos": [
+        0,
+        -0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin4_1__rimx-1",
+      "parent": "cabinet__bin4_1",
+      "pos": [
+        0,
+        -0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin4_1__rimy-1",
+      "parent": "cabinet__bin4_1",
+      "pos": [
+        -0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin4_1__side1",
+      "parent": "cabinet__bin4_1",
+      "pos": [
+        0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin4_1__end1",
+      "parent": "cabinet__bin4_1",
+      "pos": [
+        0,
+        0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin4_1__rimx1",
+      "parent": "cabinet__bin4_1",
+      "pos": [
+        0,
+        0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin4_1__rimy1",
+      "parent": "cabinet__bin4_1",
+      "pos": [
+        0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin4_1__label",
+      "parent": "cabinet__bin4_1",
+      "pos": [
+        0,
+        -0.153,
+        0.0884
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.09,
+        0.002,
+        0.035
+      ],
+      "material": "white",
+      "collision": false
+    },
+    {
+      "id": "cabinet__shelf5",
+      "parent": "cabinet",
+      "pos": [
+        0,
+        0,
+        1.53
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "shelf",
+      "label": "层板 6"
+    },
+    {
+      "id": "cabinet__shelfplate5",
+      "parent": "cabinet__shelf5",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.8,
+        0.37,
+        0.025
+      ],
+      "material": "metal"
+    },
+    {
+      "id": "cabinet__bin5_-1",
+      "parent": "cabinet__shelf5",
+      "pos": [
+        -0.205,
+        0,
+        0.014
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "prototype": "bin",
+      "label": "周转箱"
+    },
+    {
+      "id": "cabinet__bin5_-1__base",
+      "parent": "cabinet__bin5_-1",
+      "pos": [
+        0,
+        0,
+        0.0025
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.3,
+        0.005
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin5_-1__side-1",
+      "parent": "cabinet__bin5_-1",
+      "pos": [
+        -0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin5_-1__end-1",
+      "parent": "cabinet__bin5_-1",
+      "pos": [
+        0,
+        -0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin5_-1__rimx-1",
+      "parent": "cabinet__bin5_-1",
+      "pos": [
+        0,
+        -0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin5_-1__rimy-1",
+      "parent": "cabinet__bin5_-1",
+      "pos": [
+        -0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin5_-1__side1",
+      "parent": "cabinet__bin5_-1",
+      "pos": [
+        0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin5_-1__end1",
+      "parent": "cabinet__bin5_-1",
+      "pos": [
+        0,
+        0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin5_-1__rimx1",
+      "parent": "cabinet__bin5_-1",
+      "pos": [
+        0,
+        0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin5_-1__rimy1",
+      "parent": "cabinet__bin5_-1",
+      "pos": [
+        0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin5_-1__label",
+      "parent": "cabinet__bin5_-1",
+      "pos": [
+        0,
+        -0.153,
+        0.0884
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.09,
+        0.002,
+        0.035
+      ],
+      "material": "white",
+      "collision": false
+    },
+    {
+      "id": "cabinet__bin5_1",
+      "parent": "cabinet__shelf5",
+      "pos": [
+        0.205,
+        0,
+        0.014
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "prototype": "bin",
+      "label": "周转箱"
+    },
+    {
+      "id": "cabinet__bin5_1__base",
+      "parent": "cabinet__bin5_1",
+      "pos": [
+        0,
+        0,
+        0.0025
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.3,
+        0.005
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin5_1__side-1",
+      "parent": "cabinet__bin5_1",
+      "pos": [
+        -0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin5_1__end-1",
+      "parent": "cabinet__bin5_1",
+      "pos": [
+        0,
+        -0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin5_1__rimx-1",
+      "parent": "cabinet__bin5_1",
+      "pos": [
+        0,
+        -0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin5_1__rimy-1",
+      "parent": "cabinet__bin5_1",
+      "pos": [
+        -0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin5_1__side1",
+      "parent": "cabinet__bin5_1",
+      "pos": [
+        0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin5_1__end1",
+      "parent": "cabinet__bin5_1",
+      "pos": [
+        0,
+        0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin5_1__rimx1",
+      "parent": "cabinet__bin5_1",
+      "pos": [
+        0,
+        0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin5_1__rimy1",
+      "parent": "cabinet__bin5_1",
+      "pos": [
+        0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cabinet__bin5_1__label",
+      "parent": "cabinet__bin5_1",
+      "pos": [
+        0,
+        -0.153,
+        0.0884
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.09,
+        0.002,
+        0.035
+      ],
+      "material": "white",
+      "collision": false
+    },
+    {
+      "id": "cabinet__door-1",
+      "parent": "cabinet",
+      "pos": [
+        -0.425,
+        -0.218,
+        0.02
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "door",
+      "label": "左柜门",
+      "hinge": true
+    },
+    {
+      "id": "cabinet__glass-1",
+      "parent": "cabinet__door-1",
+      "pos": [
+        0.2125,
+        0,
+        0.93
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.375,
+        0.009,
+        1.75
+      ],
+      "material": "glass"
+    },
+    {
+      "id": "cabinet__doorrail-10",
+      "parent": "cabinet__door-1",
+      "pos": [
+        0,
+        0,
+        0.93
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.025,
+        0.025,
+        1.86
+      ],
+      "material": "metal"
+    },
+    {
+      "id": "cabinet__doorrail-10.425",
+      "parent": "cabinet__door-1",
+      "pos": [
+        0.425,
+        0,
+        0.93
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.025,
+        0.025,
+        1.86
+      ],
+      "material": "metal"
+    },
+    {
+      "id": "cabinet__doorcross-10.015",
+      "parent": "cabinet__door-1",
+      "pos": [
+        0.2125,
+        0,
+        0.015
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.425,
+        0.025,
+        0.03
+      ],
+      "material": "metal"
+    },
+    {
+      "id": "cabinet__doorcross-11.845",
+      "parent": "cabinet__door-1",
+      "pos": [
+        0.2125,
+        0,
+        1.845
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.425,
+        0.025,
+        0.03
+      ],
+      "material": "metal"
+    },
+    {
+      "id": "cabinet__handle-1",
+      "parent": "cabinet__door-1",
+      "pos": [
+        0.37,
+        -0.025,
+        0.9
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.018,
+        0.026,
+        0.13
+      ],
+      "material": "black"
+    },
+    {
+      "id": "cabinet__hinge-10.18",
+      "parent": "cabinet__door-1",
+      "pos": [
+        0,
+        0.008,
+        0.18
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "cylinder",
+      "size": [
+        0.025,
+        0.025,
+        0.07
+      ],
+      "material": "metal"
+    },
+    {
+      "id": "cabinet__hinge-11.66",
+      "parent": "cabinet__door-1",
+      "pos": [
+        0,
+        0.008,
+        1.66
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "cylinder",
+      "size": [
+        0.025,
+        0.025,
+        0.07
+      ],
+      "material": "metal"
+    },
+    {
+      "id": "cabinet__door1",
+      "parent": "cabinet",
+      "pos": [
+        0.425,
+        -0.218,
+        0.02
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "door",
+      "label": "右柜门",
+      "hinge": true
+    },
+    {
+      "id": "cabinet__glass1",
+      "parent": "cabinet__door1",
+      "pos": [
+        -0.2125,
+        0,
+        0.93
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.375,
+        0.009,
+        1.75
+      ],
+      "material": "glass"
+    },
+    {
+      "id": "cabinet__doorrail10",
+      "parent": "cabinet__door1",
+      "pos": [
+        0,
+        0,
+        0.93
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.025,
+        0.025,
+        1.86
+      ],
+      "material": "metal"
+    },
+    {
+      "id": "cabinet__doorrail1-0.425",
+      "parent": "cabinet__door1",
+      "pos": [
+        -0.425,
+        0,
+        0.93
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.025,
+        0.025,
+        1.86
+      ],
+      "material": "metal"
+    },
+    {
+      "id": "cabinet__doorcross10.015",
+      "parent": "cabinet__door1",
+      "pos": [
+        -0.2125,
+        0,
+        0.015
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.425,
+        0.025,
+        0.03
+      ],
+      "material": "metal"
+    },
+    {
+      "id": "cabinet__doorcross11.845",
+      "parent": "cabinet__door1",
+      "pos": [
+        -0.2125,
+        0,
+        1.845
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.425,
+        0.025,
+        0.03
+      ],
+      "material": "metal"
+    },
+    {
+      "id": "cabinet__handle1",
+      "parent": "cabinet__door1",
+      "pos": [
+        -0.37,
+        -0.025,
+        0.9
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.018,
+        0.026,
+        0.13
+      ],
+      "material": "black"
+    },
+    {
+      "id": "cabinet__hinge10.18",
+      "parent": "cabinet__door1",
+      "pos": [
+        0,
+        0.008,
+        0.18
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "cylinder",
+      "size": [
+        0.025,
+        0.025,
+        0.07
+      ],
+      "material": "metal"
+    },
+    {
+      "id": "cabinet__hinge11.66",
+      "parent": "cabinet__door1",
+      "pos": [
+        0,
+        0.008,
+        1.66
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "cylinder",
+      "size": [
+        0.025,
+        0.025,
+        0.07
+      ],
+      "material": "metal"
+    }
+  ],
+  "table": [
+    {
+      "id": "table",
+      "parent": null,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "prototype": "table",
+      "label": "配药工作台"
+    },
+    {
+      "id": "table__top",
+      "parent": "table",
+      "pos": [
+        0,
+        0,
+        0.742
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        1.46,
+        1.6,
+        0.036
+      ],
+      "material": "wood"
+    },
+    {
+      "id": "table__leg-1_-1",
+      "parent": "table",
+      "pos": [
+        -0.6749999999999999,
+        -0.74,
+        0.362
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.035,
+        0.035,
+        0.724
+      ],
+      "material": "black"
+    },
+    {
+      "id": "table__leg-1_1",
+      "parent": "table",
+      "pos": [
+        -0.6749999999999999,
+        0.74,
+        0.362
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.035,
+        0.035,
+        0.724
+      ],
+      "material": "black"
+    },
+    {
+      "id": "table__leg1_-1",
+      "parent": "table",
+      "pos": [
+        0.6749999999999999,
+        -0.74,
+        0.362
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.035,
+        0.035,
+        0.724
+      ],
+      "material": "black"
+    },
+    {
+      "id": "table__leg1_1",
+      "parent": "table",
+      "pos": [
+        0.6749999999999999,
+        0.74,
+        0.362
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.035,
+        0.035,
+        0.724
+      ],
+      "material": "black"
+    },
+    {
+      "id": "table__frame-1",
+      "parent": "table",
+      "pos": [
+        -0.69,
+        0,
+        0.63
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.025,
+        1.5,
+        0.04
+      ],
+      "material": "black"
+    },
+    {
+      "id": "table__frame1",
+      "parent": "table",
+      "pos": [
+        0.69,
+        0,
+        0.63
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.025,
+        1.5,
+        0.04
+      ],
+      "material": "black"
+    }
+  ],
+  "return_table": [
+    {
+      "id": "return_table",
+      "parent": null,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "prototype": "return_table",
+      "label": "周转箱工作台"
+    },
+    {
+      "id": "return_table__top",
+      "parent": "return_table",
+      "pos": [
+        0,
+        0,
+        0.742
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        1.42,
+        0.55,
+        0.036
+      ],
+      "material": "wood"
+    },
+    {
+      "id": "return_table__leg-1_-1",
+      "parent": "return_table",
+      "pos": [
+        -0.6549999999999999,
+        -0.21500000000000002,
+        0.362
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.035,
+        0.035,
+        0.724
+      ],
+      "material": "black"
+    },
+    {
+      "id": "return_table__leg-1_1",
+      "parent": "return_table",
+      "pos": [
+        -0.6549999999999999,
+        0.21500000000000002,
+        0.362
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.035,
+        0.035,
+        0.724
+      ],
+      "material": "black"
+    },
+    {
+      "id": "return_table__leg1_-1",
+      "parent": "return_table",
+      "pos": [
+        0.6549999999999999,
+        -0.21500000000000002,
+        0.362
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.035,
+        0.035,
+        0.724
+      ],
+      "material": "black"
+    },
+    {
+      "id": "return_table__leg1_1",
+      "parent": "return_table",
+      "pos": [
+        0.6549999999999999,
+        0.21500000000000002,
+        0.362
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.035,
+        0.035,
+        0.724
+      ],
+      "material": "black"
+    },
+    {
+      "id": "return_table__frame-1",
+      "parent": "return_table",
+      "pos": [
+        -0.6699999999999999,
+        0,
+        0.63
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.025,
+        0.45000000000000007,
+        0.04
+      ],
+      "material": "black"
+    },
+    {
+      "id": "return_table__frame1",
+      "parent": "return_table",
+      "pos": [
+        0.6699999999999999,
+        0,
+        0.63
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.025,
+        0.45000000000000007,
+        0.04
+      ],
+      "material": "black"
+    }
+  ],
+  "rack": [
+    {
+      "id": "rack",
+      "parent": null,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "prototype": "rack",
+      "label": "开放货架"
+    },
+    {
+      "id": "rack__post-1_-1",
+      "parent": "rack",
+      "pos": [
+        -0.43,
+        -0.17,
+        1.02
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.035,
+        0.035,
+        2.04
+      ],
+      "material": "black"
+    },
+    {
+      "id": "rack__post-1_1",
+      "parent": "rack",
+      "pos": [
+        -0.43,
+        0.17,
+        1.02
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.035,
+        0.035,
+        2.04
+      ],
+      "material": "black"
+    },
+    {
+      "id": "rack__post1_-1",
+      "parent": "rack",
+      "pos": [
+        0.43,
+        -0.17,
+        1.02
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.035,
+        0.035,
+        2.04
+      ],
+      "material": "black"
+    },
+    {
+      "id": "rack__post1_1",
+      "parent": "rack",
+      "pos": [
+        0.43,
+        0.17,
+        1.02
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.035,
+        0.035,
+        2.04
+      ],
+      "material": "black"
+    },
+    {
+      "id": "rack__shelf0",
+      "parent": "rack",
+      "pos": [
+        0,
+        0,
+        0.16
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "shelf",
+      "label": "货架层板 1"
+    },
+    {
+      "id": "rack__rackplate0",
+      "parent": "rack__shelf0",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.9,
+        0.38,
+        0.035
+      ],
+      "material": "black"
+    },
+    {
+      "id": "rack__shelf1",
+      "parent": "rack",
+      "pos": [
+        0,
+        0,
+        0.54
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "shelf",
+      "label": "货架层板 2"
+    },
+    {
+      "id": "rack__rackplate1",
+      "parent": "rack__shelf1",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.9,
+        0.38,
+        0.035
+      ],
+      "material": "black"
+    },
+    {
+      "id": "rack__shelf2",
+      "parent": "rack",
+      "pos": [
+        0,
+        0,
+        0.92
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "shelf",
+      "label": "货架层板 3"
+    },
+    {
+      "id": "rack__rackplate2",
+      "parent": "rack__shelf2",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.9,
+        0.38,
+        0.035
+      ],
+      "material": "black"
+    },
+    {
+      "id": "rack__shelf3",
+      "parent": "rack",
+      "pos": [
+        0,
+        0,
+        1.3
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "shelf",
+      "label": "货架层板 4"
+    },
+    {
+      "id": "rack__rackplate3",
+      "parent": "rack__shelf3",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.9,
+        0.38,
+        0.035
+      ],
+      "material": "black"
+    },
+    {
+      "id": "rack__shelf4",
+      "parent": "rack",
+      "pos": [
+        0,
+        0,
+        1.68
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "shelf",
+      "label": "货架层板 5"
+    },
+    {
+      "id": "rack__rackplate4",
+      "parent": "rack__shelf4",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.9,
+        0.38,
+        0.035
+      ],
+      "material": "black"
+    }
+  ],
+  "dispatch_rack": [
+    {
+      "id": "dispatch_rack",
+      "parent": null,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "prototype": "dispatch_rack",
+      "label": "待取药货架"
+    },
+    {
+      "id": "dispatch_rack__post-1_-1",
+      "parent": "dispatch_rack",
+      "pos": [
+        -0.53,
+        -0.18000000000000002,
+        1.02
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.035,
+        0.035,
+        2.04
+      ],
+      "material": "black"
+    },
+    {
+      "id": "dispatch_rack__post-1_1",
+      "parent": "dispatch_rack",
+      "pos": [
+        -0.53,
+        0.18000000000000002,
+        1.02
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.035,
+        0.035,
+        2.04
+      ],
+      "material": "black"
+    },
+    {
+      "id": "dispatch_rack__post1_-1",
+      "parent": "dispatch_rack",
+      "pos": [
+        0.53,
+        -0.18000000000000002,
+        1.02
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.035,
+        0.035,
+        2.04
+      ],
+      "material": "black"
+    },
+    {
+      "id": "dispatch_rack__post1_1",
+      "parent": "dispatch_rack",
+      "pos": [
+        0.53,
+        0.18000000000000002,
+        1.02
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.035,
+        0.035,
+        2.04
+      ],
+      "material": "black"
+    },
+    {
+      "id": "dispatch_rack__shelf0",
+      "parent": "dispatch_rack",
+      "pos": [
+        0,
+        0,
+        0.16
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "shelf",
+      "label": "货架层板 1"
+    },
+    {
+      "id": "dispatch_rack__rackplate0",
+      "parent": "dispatch_rack__shelf0",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        1.1,
+        0.4,
+        0.035
+      ],
+      "material": "black"
+    },
+    {
+      "id": "dispatch_rack__shelf1",
+      "parent": "dispatch_rack",
+      "pos": [
+        0,
+        0,
+        0.54
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "shelf",
+      "label": "货架层板 2"
+    },
+    {
+      "id": "dispatch_rack__rackplate1",
+      "parent": "dispatch_rack__shelf1",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        1.1,
+        0.4,
+        0.035
+      ],
+      "material": "black"
+    },
+    {
+      "id": "dispatch_rack__shelf2",
+      "parent": "dispatch_rack",
+      "pos": [
+        0,
+        0,
+        0.92
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "shelf",
+      "label": "货架层板 3"
+    },
+    {
+      "id": "dispatch_rack__rackplate2",
+      "parent": "dispatch_rack__shelf2",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        1.1,
+        0.4,
+        0.035
+      ],
+      "material": "black"
+    },
+    {
+      "id": "dispatch_rack__shelf3",
+      "parent": "dispatch_rack",
+      "pos": [
+        0,
+        0,
+        1.3
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "shelf",
+      "label": "货架层板 4"
+    },
+    {
+      "id": "dispatch_rack__rackplate3",
+      "parent": "dispatch_rack__shelf3",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        1.1,
+        0.4,
+        0.035
+      ],
+      "material": "black"
+    },
+    {
+      "id": "dispatch_rack__shelf4",
+      "parent": "dispatch_rack",
+      "pos": [
+        0,
+        0,
+        1.68
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "shelf",
+      "label": "货架层板 5"
+    },
+    {
+      "id": "dispatch_rack__rackplate4",
+      "parent": "dispatch_rack__shelf4",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        1.1,
+        0.4,
+        0.035
+      ],
+      "material": "black"
+    }
+  ],
+  "chair": [
+    {
+      "id": "chair",
+      "parent": null,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "prototype": "chair",
+      "label": "座椅"
+    },
+    {
+      "id": "chair__seat",
+      "parent": "chair",
+      "pos": [
+        0,
+        0,
+        0.44
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.38,
+        0.38,
+        0.06
+      ],
+      "material": "red"
+    },
+    {
+      "id": "chair__back",
+      "parent": "chair",
+      "pos": [
+        0,
+        0.18,
+        0.69
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.38,
+        0.045,
+        0.44
+      ],
+      "material": "red"
+    },
+    {
+      "id": "chair__leg-1-1",
+      "parent": "chair",
+      "pos": [
+        -0.14,
+        -0.14,
+        0.21
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.025,
+        0.025,
+        0.42
+      ],
+      "material": "black"
+    },
+    {
+      "id": "chair__leg-11",
+      "parent": "chair",
+      "pos": [
+        -0.14,
+        0.14,
+        0.21
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.025,
+        0.025,
+        0.42
+      ],
+      "material": "black"
+    },
+    {
+      "id": "chair__leg1-1",
+      "parent": "chair",
+      "pos": [
+        0.14,
+        -0.14,
+        0.21
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.025,
+        0.025,
+        0.42
+      ],
+      "material": "black"
+    },
+    {
+      "id": "chair__leg11",
+      "parent": "chair",
+      "pos": [
+        0.14,
+        0.14,
+        0.21
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.025,
+        0.025,
+        0.42
+      ],
+      "material": "black"
+    }
+  ],
+  "bin": [
+    {
+      "id": "bin",
+      "parent": null,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "prototype": "bin",
+      "label": "周转箱"
+    },
+    {
+      "id": "bin__base",
+      "parent": "bin",
+      "pos": [
+        0,
+        0,
+        0.0025
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.3,
+        0.005
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "bin__side-1",
+      "parent": "bin",
+      "pos": [
+        -0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "bin__end-1",
+      "parent": "bin",
+      "pos": [
+        0,
+        -0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "bin__rimx-1",
+      "parent": "bin",
+      "pos": [
+        0,
+        -0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "bin__rimy-1",
+      "parent": "bin",
+      "pos": [
+        -0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "bin__side1",
+      "parent": "bin",
+      "pos": [
+        0.175,
+        0,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.005,
+        0.3,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "bin__end1",
+      "parent": "bin",
+      "pos": [
+        0,
+        0.15,
+        0.085
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.35,
+        0.005,
+        0.17
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "bin__rimx1",
+      "parent": "bin",
+      "pos": [
+        0,
+        0.15,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.362,
+        0.012,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "bin__rimy1",
+      "parent": "bin",
+      "pos": [
+        0.175,
+        0,
+        0.17
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.012,
+        0.3,
+        0.012
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "bin__label",
+      "parent": "bin",
+      "pos": [
+        0,
+        -0.153,
+        0.0884
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.09,
+        0.002,
+        0.035
+      ],
+      "material": "white",
+      "collision": false
+    }
+  ],
+  "bottle": [
+    {
+      "id": "bottle",
+      "parent": null,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "prototype": "bottle",
+      "label": "药瓶"
+    },
+    {
+      "id": "bottle__base",
+      "parent": "bottle",
+      "pos": [
+        0,
+        0,
+        0.003
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "cylinder",
+      "size": [
+        0.055,
+        0.055,
+        0.006
+      ],
+      "material": "amber"
+    },
+    {
+      "id": "bottle__body",
+      "parent": "bottle",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "tube",
+      "size": [
+        0.055,
+        0.049,
+        0.084
+      ],
+      "material": "amber",
+      "radii": [
+        0.0275,
+        0.0245
+      ],
+      "height": 0.084
+    },
+    {
+      "id": "bottle__shoulder",
+      "parent": "bottle",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "profile",
+      "size": [
+        0.055,
+        0.035,
+        0.016
+      ],
+      "material": "amber",
+      "profile": [
+        [
+          0.084,
+          0.0275
+        ],
+        [
+          0.1,
+          0.0175
+        ],
+        [
+          0.1,
+          0.015
+        ],
+        [
+          0.083,
+          0.0245
+        ]
+      ]
+    },
+    {
+      "id": "bottle__neck",
+      "parent": "bottle",
+      "pos": [
+        0,
+        0,
+        0.1
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "tube",
+      "size": [
+        0.035,
+        0.03,
+        0.017
+      ],
+      "material": "amber",
+      "radii": [
+        0.0175,
+        0.015
+      ],
+      "height": 0.017
+    },
+    {
+      "id": "bottle__label",
+      "parent": "bottle",
+      "pos": [
+        0,
+        0,
+        0.024
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "tube",
+      "size": [
+        0.056,
+        0.055,
+        0.043
+      ],
+      "material": "white",
+      "radii": [
+        0.028,
+        0.0276
+      ],
+      "height": 0.043,
+      "collision": false
+    },
+    {
+      "id": "bottle__cap",
+      "parent": "bottle",
+      "pos": [
+        0,
+        0,
+        0.116
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "cap",
+      "label": "瓶盖"
+    },
+    {
+      "id": "bottle__cap_top",
+      "parent": "bottle__cap",
+      "pos": [
+        0,
+        0,
+        0.018
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "cylinder",
+      "size": [
+        0.041,
+        0.041,
+        0.004
+      ],
+      "material": "blue"
+    },
+    {
+      "id": "bottle__cap_skirt",
+      "parent": "bottle__cap",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "tube",
+      "size": [
+        0.041,
+        0.036,
+        0.018
+      ],
+      "material": "blue",
+      "radii": [
+        0.0205,
+        0.018
+      ],
+      "height": 0.018
+    },
+    {
+      "id": "bottle__cap_rib0",
+      "parent": "bottle__cap",
+      "pos": [
+        0.0205,
+        0.0,
+        0.01
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.0015,
+        0.015
+      ],
+      "material": "blue"
+    },
+    {
+      "id": "bottle__cap_rib1",
+      "parent": "bottle__cap",
+      "pos": [
+        0.019801479438925903,
+        0.005305790424601675,
+        0.01
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.0015,
+        0.015
+      ],
+      "material": "blue"
+    },
+    {
+      "id": "bottle__cap_rib2",
+      "parent": "bottle__cap",
+      "pos": [
+        0.017753520777580994,
+        0.010249999999999999,
+        0.01
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.0015,
+        0.015
+      ],
+      "material": "blue"
+    },
+    {
+      "id": "bottle__cap_rib3",
+      "parent": "bottle__cap",
+      "pos": [
+        0.014495689014324227,
+        0.014495689014324223,
+        0.01
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.0015,
+        0.015
+      ],
+      "material": "blue"
+    },
+    {
+      "id": "bottle__cap_rib4",
+      "parent": "bottle__cap",
+      "pos": [
+        0.010250000000000002,
+        0.01775352077758099,
+        0.01
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.0015,
+        0.015
+      ],
+      "material": "blue"
+    },
+    {
+      "id": "bottle__cap_rib5",
+      "parent": "bottle__cap",
+      "pos": [
+        0.005305790424601675,
+        0.019801479438925903,
+        0.01
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.0015,
+        0.015
+      ],
+      "material": "blue"
+    },
+    {
+      "id": "bottle__cap_rib6",
+      "parent": "bottle__cap",
+      "pos": [
+        1.2552629691260371e-18,
+        0.0205,
+        0.01
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.0015,
+        0.015
+      ],
+      "material": "blue"
+    },
+    {
+      "id": "bottle__cap_rib7",
+      "parent": "bottle__cap",
+      "pos": [
+        -0.005305790424601673,
+        0.019801479438925903,
+        0.01
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.0015,
+        0.015
+      ],
+      "material": "blue"
+    },
+    {
+      "id": "bottle__cap_rib8",
+      "parent": "bottle__cap",
+      "pos": [
+        -0.010249999999999997,
+        0.017753520777580994,
+        0.01
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.0015,
+        0.015
+      ],
+      "material": "blue"
+    },
+    {
+      "id": "bottle__cap_rib9",
+      "parent": "bottle__cap",
+      "pos": [
+        -0.014495689014324223,
+        0.014495689014324227,
+        0.01
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.0015,
+        0.015
+      ],
+      "material": "blue"
+    },
+    {
+      "id": "bottle__cap_rib10",
+      "parent": "bottle__cap",
+      "pos": [
+        -0.017753520777580994,
+        0.010249999999999999,
+        0.01
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.0015,
+        0.015
+      ],
+      "material": "blue"
+    },
+    {
+      "id": "bottle__cap_rib11",
+      "parent": "bottle__cap",
+      "pos": [
+        -0.0198014794389259,
+        0.005305790424601681,
+        0.01
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.0015,
+        0.015
+      ],
+      "material": "blue"
+    },
+    {
+      "id": "bottle__cap_rib12",
+      "parent": "bottle__cap",
+      "pos": [
+        -0.0205,
+        2.5105259382520743e-18,
+        0.01
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.0015,
+        0.015
+      ],
+      "material": "blue"
+    },
+    {
+      "id": "bottle__cap_rib13",
+      "parent": "bottle__cap",
+      "pos": [
+        -0.019801479438925903,
+        -0.005305790424601676,
+        0.01
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.0015,
+        0.015
+      ],
+      "material": "blue"
+    },
+    {
+      "id": "bottle__cap_rib14",
+      "parent": "bottle__cap",
+      "pos": [
+        -0.017753520777580998,
+        -0.010249999999999995,
+        0.01
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.0015,
+        0.015
+      ],
+      "material": "blue"
+    },
+    {
+      "id": "bottle__cap_rib15",
+      "parent": "bottle__cap",
+      "pos": [
+        -0.014495689014324232,
+        -0.014495689014324216,
+        0.01
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.0015,
+        0.015
+      ],
+      "material": "blue"
+    },
+    {
+      "id": "bottle__cap_rib16",
+      "parent": "bottle__cap",
+      "pos": [
+        -0.010250000000000009,
+        -0.017753520777580988,
+        0.01
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.0015,
+        0.015
+      ],
+      "material": "blue"
+    },
+    {
+      "id": "bottle__cap_rib17",
+      "parent": "bottle__cap",
+      "pos": [
+        -0.005305790424601673,
+        -0.019801479438925903,
+        0.01
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.0015,
+        0.015
+      ],
+      "material": "blue"
+    },
+    {
+      "id": "bottle__cap_rib18",
+      "parent": "bottle__cap",
+      "pos": [
+        -3.765788907378111e-18,
+        -0.0205,
+        0.01
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.0015,
+        0.015
+      ],
+      "material": "blue"
+    },
+    {
+      "id": "bottle__cap_rib19",
+      "parent": "bottle__cap",
+      "pos": [
+        0.005305790424601667,
+        -0.019801479438925903,
+        0.01
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.0015,
+        0.015
+      ],
+      "material": "blue"
+    },
+    {
+      "id": "bottle__cap_rib20",
+      "parent": "bottle__cap",
+      "pos": [
+        0.010250000000000002,
+        -0.01775352077758099,
+        0.01
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.0015,
+        0.015
+      ],
+      "material": "blue"
+    },
+    {
+      "id": "bottle__cap_rib21",
+      "parent": "bottle__cap",
+      "pos": [
+        0.014495689014324221,
+        -0.014495689014324228,
+        0.01
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.0015,
+        0.015
+      ],
+      "material": "blue"
+    },
+    {
+      "id": "bottle__cap_rib22",
+      "parent": "bottle__cap",
+      "pos": [
+        0.017753520777580988,
+        -0.010250000000000009,
+        0.01
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.0015,
+        0.015
+      ],
+      "material": "blue"
+    },
+    {
+      "id": "bottle__cap_rib23",
+      "parent": "bottle__cap",
+      "pos": [
+        0.019801479438925896,
+        -0.005305790424601693,
+        0.01
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.0015,
+        0.015
+      ],
+      "material": "blue"
+    }
+  ],
+  "carton": [
+    {
+      "id": "carton",
+      "parent": null,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "prototype": "carton",
+      "label": "药盒"
+    },
+    {
+      "id": "carton__base",
+      "parent": "carton",
+      "pos": [
+        0,
+        0,
+        0.001
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.07,
+        0.1,
+        0.0015
+      ],
+      "material": "white"
+    },
+    {
+      "id": "carton__side-1",
+      "parent": "carton",
+      "pos": [
+        -0.03425,
+        0,
+        0.045
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.1,
+        0.09
+      ],
+      "material": "white"
+    },
+    {
+      "id": "carton__end-1",
+      "parent": "carton",
+      "pos": [
+        0,
+        -0.04925,
+        0.045
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.07,
+        0.0015,
+        0.09
+      ],
+      "material": "white"
+    },
+    {
+      "id": "carton__side1",
+      "parent": "carton",
+      "pos": [
+        0.03425,
+        0,
+        0.045
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.0015,
+        0.1,
+        0.09
+      ],
+      "material": "white"
+    },
+    {
+      "id": "carton__end1",
+      "parent": "carton",
+      "pos": [
+        0,
+        0.04925,
+        0.045
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.07,
+        0.0015,
+        0.09
+      ],
+      "material": "white"
+    },
+    {
+      "id": "carton__stripe",
+      "parent": "carton",
+      "pos": [
+        0,
+        -0.051000000000000004,
+        0.045
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.07,
+        0.001,
+        0.026
+      ],
+      "material": "blue",
+      "collision": false
+    },
+    {
+      "id": "carton__flap",
+      "parent": "carton",
+      "pos": [
+        0,
+        0.05,
+        0.09
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "flap",
+      "label": "盒盖",
+      "axis": "x"
+    },
+    {
+      "id": "carton__lid",
+      "parent": "carton__flap",
+      "pos": [
+        0,
+        -0.05,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.07,
+        0.1,
+        0.0015
+      ],
+      "material": "white"
+    },
+    {
+      "id": "carton__tab",
+      "parent": "carton__flap",
+      "pos": [
+        0,
+        -0.109,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.04,
+        0.018,
+        0.0015
+      ],
+      "material": "white"
+    }
+  ],
+  "blister": [
+    {
+      "id": "blister",
+      "parent": null,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "prototype": "blister",
+      "label": "泡罩药板"
+    },
+    {
+      "id": "blister__foil",
+      "parent": "blister",
+      "pos": [
+        0,
+        0,
+        0.001
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.065,
+        0.105,
+        0.002
+      ],
+      "material": "foil"
+    },
+    {
+      "id": "blister__pill00",
+      "parent": "blister",
+      "pos": [
+        -0.0145,
+        -0.031,
+        0.005
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "pill",
+      "label": "药片"
+    },
+    {
+      "id": "blister__tablet00",
+      "parent": "blister__pill00",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "ellipsoid",
+      "size": [
+        0.013,
+        0.013,
+        0.005
+      ],
+      "material": "white"
+    },
+    {
+      "id": "blister__dome00",
+      "parent": "blister",
+      "pos": [
+        -0.0145,
+        -0.031,
+        0.005
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "ellipsoid",
+      "size": [
+        0.021,
+        0.021,
+        0.014
+      ],
+      "material": "bin",
+      "collision": false
+    },
+    {
+      "id": "blister__pill01",
+      "parent": "blister",
+      "pos": [
+        -0.0145,
+        0.0,
+        0.005
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "pill",
+      "label": "药片"
+    },
+    {
+      "id": "blister__tablet01",
+      "parent": "blister__pill01",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "ellipsoid",
+      "size": [
+        0.013,
+        0.013,
+        0.005
+      ],
+      "material": "white"
+    },
+    {
+      "id": "blister__dome01",
+      "parent": "blister",
+      "pos": [
+        -0.0145,
+        0.0,
+        0.005
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "ellipsoid",
+      "size": [
+        0.021,
+        0.021,
+        0.014
+      ],
+      "material": "bin",
+      "collision": false
+    },
+    {
+      "id": "blister__pill02",
+      "parent": "blister",
+      "pos": [
+        -0.0145,
+        0.031,
+        0.005
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "pill",
+      "label": "药片"
+    },
+    {
+      "id": "blister__tablet02",
+      "parent": "blister__pill02",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "ellipsoid",
+      "size": [
+        0.013,
+        0.013,
+        0.005
+      ],
+      "material": "white"
+    },
+    {
+      "id": "blister__dome02",
+      "parent": "blister",
+      "pos": [
+        -0.0145,
+        0.031,
+        0.005
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "ellipsoid",
+      "size": [
+        0.021,
+        0.021,
+        0.014
+      ],
+      "material": "bin",
+      "collision": false
+    },
+    {
+      "id": "blister__pill10",
+      "parent": "blister",
+      "pos": [
+        0.0145,
+        -0.031,
+        0.005
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "pill",
+      "label": "药片"
+    },
+    {
+      "id": "blister__tablet10",
+      "parent": "blister__pill10",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "ellipsoid",
+      "size": [
+        0.013,
+        0.013,
+        0.005
+      ],
+      "material": "white"
+    },
+    {
+      "id": "blister__dome10",
+      "parent": "blister",
+      "pos": [
+        0.0145,
+        -0.031,
+        0.005
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "ellipsoid",
+      "size": [
+        0.021,
+        0.021,
+        0.014
+      ],
+      "material": "bin",
+      "collision": false
+    },
+    {
+      "id": "blister__pill11",
+      "parent": "blister",
+      "pos": [
+        0.0145,
+        0.0,
+        0.005
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "pill",
+      "label": "药片"
+    },
+    {
+      "id": "blister__tablet11",
+      "parent": "blister__pill11",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "ellipsoid",
+      "size": [
+        0.013,
+        0.013,
+        0.005
+      ],
+      "material": "white"
+    },
+    {
+      "id": "blister__dome11",
+      "parent": "blister",
+      "pos": [
+        0.0145,
+        0.0,
+        0.005
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "ellipsoid",
+      "size": [
+        0.021,
+        0.021,
+        0.014
+      ],
+      "material": "bin",
+      "collision": false
+    },
+    {
+      "id": "blister__pill12",
+      "parent": "blister",
+      "pos": [
+        0.0145,
+        0.031,
+        0.005
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "role": "pill",
+      "label": "药片"
+    },
+    {
+      "id": "blister__tablet12",
+      "parent": "blister__pill12",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "ellipsoid",
+      "size": [
+        0.013,
+        0.013,
+        0.005
+      ],
+      "material": "white"
+    },
+    {
+      "id": "blister__dome12",
+      "parent": "blister",
+      "pos": [
+        0.0145,
+        0.031,
+        0.005
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "ellipsoid",
+      "size": [
+        0.021,
+        0.021,
+        0.014
+      ],
+      "material": "bin",
+      "collision": false
+    }
+  ],
+  "cup": [
+    {
+      "id": "cup",
+      "parent": null,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "prototype": "cup",
+      "label": "分药杯"
+    },
+    {
+      "id": "cup__base",
+      "parent": "cup",
+      "pos": [
+        0,
+        0,
+        0.0025
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "cylinder",
+      "size": [
+        0.045,
+        0.045,
+        0.005
+      ],
+      "material": "bin"
+    },
+    {
+      "id": "cup__wall",
+      "parent": "cup",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "profile",
+      "size": [
+        0.06,
+        0.045,
+        0.048
+      ],
+      "material": "bin",
+      "profile": [
+        [
+          0.004,
+          0.0225
+        ],
+        [
+          0.048,
+          0.03
+        ],
+        [
+          0.048,
+          0.028
+        ],
+        [
+          0.004,
+          0.0205
+        ]
+      ]
+    }
+  ],
+  "robot_station": [
+    {
+      "id": "robot_station",
+      "parent": null,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "prototype": "robot_station",
+      "label": "机器人工作站"
+    },
+    {
+      "id": "robot_station__pedestal",
+      "parent": "robot_station",
+      "pos": [
+        0,
+        0,
+        0.44
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.18,
+        0.18,
+        0.88
+      ],
+      "material": "black"
+    },
+    {
+      "id": "robot_station__mount",
+      "parent": "robot_station",
+      "pos": [
+        0,
+        0,
+        0.89
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.22,
+        0.22,
+        0.02
+      ],
+      "material": "metal"
+    }
+  ],
+  "archive_box": [
+    {
+      "id": "archive_box",
+      "parent": null,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "kind": "assembly",
+      "prototype": "archive_box",
+      "label": "档案箱"
+    },
+    {
+      "id": "archive_box__body",
+      "parent": "archive_box",
+      "pos": [
+        0,
+        0,
+        0.16
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.6,
+        0.34,
+        0.32
+      ],
+      "material": "cardboard"
+    },
+    {
+      "id": "archive_box__lid",
+      "parent": "archive_box",
+      "pos": [
+        0,
+        0,
+        0.327
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.62,
+        0.36,
+        0.025
+      ],
+      "material": "cardboard"
+    },
+    {
+      "id": "archive_box__label",
+      "parent": "archive_box",
+      "pos": [
+        0,
+        -0.172,
+        0.14
+      ],
+      "yaw": 0,
+      "kind": "geom",
+      "shape": "box",
+      "size": [
+        0.17,
+        0.002,
+        0.11
+      ],
+      "material": "white",
+      "collision": false
+    }
+  ]
+}
