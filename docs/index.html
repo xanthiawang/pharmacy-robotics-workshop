@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="药房机器人工作坊的资产下载、操作流程和 Blender 建模指引。">
+<title>药房机器人工作坊</title>
+<style>
+:root{color-scheme:light;--ink:#132d38;--accent:#07695f;--muted:#41616b;--line:#d5e4e2;--wash:#eff7f5}
+*{box-sizing:border-box} body{margin:0;background:white;color:var(--ink);font:17px/1.65 system-ui,"PingFang SC","Microsoft YaHei",sans-serif}
+a{color:var(--accent);text-underline-offset:3px}a:focus-visible{outline:3px solid #e0a54b;outline-offset:4px}
+main,nav,footer{width:min(100% - 40px,1000px);margin:auto}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid var(--line);gap:20px}
+nav a:first-child{color:var(--ink);font-weight:750;text-decoration:none}
+header{padding:clamp(35px,7vw,80px) 0 42px}
+h1{margin:0 0 12px;font-size:clamp(37px,6vw,64px);line-height:1.15;letter-spacing:-.025em}
+h2{font-size:clamp(23px,4vw,32px);line-height:1.35;margin:0 0 12px}
+h3{font-size:20px;margin:0 0 6px}p{margin:0 0 16px}
+.intro{max-width:650px;color:var(--muted);font-size:20px}
+.actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:25px}
+.button{padding:11px 17px;border-radius:9px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700}
+section{margin:0 0 34px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:0;list-style:none;margin:0}
+.steps li,.model{padding:20px;border:1px solid var(--line);border-radius:12px;background:var(--wash)}
+.steps p,.model p{margin:0;color:var(--muted)}
+.note{margin-top:16px;color:var(--muted);font-size:15px}
+.model{background:#f8f5ee;border-color:#e8deca}
+figure{margin:0;max-width:800px}
+img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:12px}
+footer{padding:20px 0 30px;margin-top:34px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+@media(max-width:700px){.steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav aria-label="项目链接"><a href="./">药房机器人工作坊</a><a href="https://github.com/xanthiawang/pharmacy-robotics-workshop">GitHub 项目</a></nav>
+<main>
+  <header>
+    <h1>药房机器人工作坊</h1>
+    <p class="intro">重新摆放药房家具，在仿真中观察机械臂和灵巧手抓起药盒、放进周转箱。</p>
+    <div class="actions">
+      <a class="button" href="https://github.com/xanthiawang/pharmacy-robotics-workshop/releases/download/v2026.11.18/pharmacy-workshop-v2026.11.18.zip">下载完整资产包</a>
+      <a href="https://github.com/xanthiawang/pharmacy-robotics-workshop/blob/main/docs/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.md">查看操作说明</a>
+    </div>
+    <p class="note">下载和查看完整说明需要 GitHub 仓库访问权限。</p>
+  </header>
+  <section aria-labelledby="browser-flow">
+    <h2 id="browser-flow">布局与仿真</h2>
+    <ol class="steps">
+      <li><h3>1. 调整家具</h3><p>在 <a href="https://urdf.enkeebot.com/">URDF Studio</a> 打开包内 .botscene，摆放柜子、椅子和中央桌，再保存布局。</p></li>
+      <li><h3>2. 转换布局</h3><p>打开资产包里的「布局转BotLab.html」，选择保存的布局，下载 BotLab 工程。</p></li>
+      <li><h3>3. 运行抓取</h3><p>在 <a href="https://botlab.enkeebot.com/">BotLab</a> 中导入 .botlab.zip，点击 Run。</p></li>
+    </ol>
+  </section>
+  <section class="model" aria-labelledby="blender-model">
+    <h2 id="blender-model">单独设计模型</h2>
+    <p>在 <a href="https://www.blender.org/download/">Blender</a> 打开完整药房或空房间的 .blend。可以调整柜子的结构，也可以从零设计新模型。</p>
+  </section>
+  <section aria-labelledby="workflow">
+    <h2 id="workflow">操作流程图</h2>
+    <figure><a href="./workflow.png"><img src="./workflow.png" width="2400" height="2303" alt="工作坊操作图：URDF Studio 调整布局，包内网页转换工程，BotLab 运行，Blender 独立建模。"></a></figure>
+  </section>
+</main>
+<footer>药房机器人工作坊 · 2026-11-18</footer>
+</body>
+</html>

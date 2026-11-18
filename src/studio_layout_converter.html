@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>药房工作坊 · 布局转 BotLab</title>
+  <style>
+    :root { color-scheme: light; font: 16px/1.65 system-ui, sans-serif; color: #142d3a; background: #f0f7f6; }
+    body { margin: 0; }
+    main { max-width: 660px; margin: clamp(24px, 8vw, 96px) auto; padding: 0 24px; }
+    h1 { font-size: clamp(28px, 5vw, 42px); line-height: 1.2; margin: 0 0 14px; }
+    p { margin: 0 0 16px; }
+    form { margin-top: 26px; padding: 24px; border: 1px solid #c9dcd9; border-radius: 16px; background: white; }
+    label { display: block; font-weight: 700; margin-bottom: 8px; }
+    input { display: block; box-sizing: border-box; width: 100%; margin-bottom: 18px; color: #142d3a; }
+    button { border: 0; border-radius: 9px; background: #086c65; color: white; padding: 10px 15px; font: inherit; font-weight: 700; cursor: pointer; }
+    button:disabled { opacity: .55; cursor: default; }
+    #result { margin-top: 16px; white-space: pre-wrap; overflow-wrap: anywhere; }
+    #result:empty { margin: 0; }
+    [data-error] { color: #972f21; }
+    .note { color: #405960; margin-top: 18px; }
+    a { color: #086c65; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>把药房布局转成 BotLab 工程</h1>
+    <p>在 URDF Studio 点 <strong>File → Export project</strong>，保存你的 <code>.botscene</code> 后，在这里选择它。</p>
+    <form id="converter">
+      <label for="scene">选择保存的布局</label>
+      <input id="scene" type="file" accept=".botscene" required>
+      <button id="convert" type="submit">转换并下载 BotLab 工程</button>
+      <div id="result" role="status" aria-live="polite"></div>
+    </form>
+    <p class="note">支持本包里的柜子、椅子和中央桌在地面上的移动和转向。转换在这台电脑上完成。</p>
+    <p>下载后，在 BotLab 点 <strong>File → Open project file / ZIP</strong>，打开新文件并点击 <strong>Run</strong>。<a href="https://botlab.enkeebot.com/" target="_blank" rel="noopener">打开 BotLab</a></p>
+  </main>
+  <script>/* ZIP_LIBRARY */</script>
+  <script>
+    const workshop = /* WORKSHOP_TEMPLATE */ null;
+    const positionTolerance = 1e-6;
+    const sceneLimit = 80 * 1024 * 1024;
+    const stateLimit = 8 * 1024 * 1024;
+
+    function requireValue(condition, message) {
+      if (!condition) throw new Error(message);
+    }
+
+    function near(a, b) {
+      return Math.abs(a - b) <= positionTolerance;
+    }
+
+    function isVector(value, length) {
+      return Array.isArray(value) && value.length === length && value.every(Number.isFinite);
+    }
+
+    function canonical(value) {
+      if (Array.isArray(value)) return value.map(canonical);
+      if (value === null || typeof value !== "object") return value;
+      return Object.fromEntries(Object.keys(value).sort().map(key => [key, canonical(value[key])]));
+    }
+
+    function readEdits(bytes) {
+      requireValue(bytes.length <= sceneLimit, "场景文件过大。请从本包的药房布局开始编辑。");
+      let stateEntries = 0;
+      const files = fflate.unzipSync(bytes, { filter: entry => {
+        if (entry.name !== "scene/state.json") return false;
+        stateEntries += 1;
+        requireValue(stateEntries === 1 && entry.originalSize <= stateLimit, "场景文件中的布局记录无效。");
+        return true;
+      }});
+      requireValue(stateEntries === 1 && files["scene/state.json"], "请用 Studio 的 Export project 保存 .botscene。");
+      const scene = JSON.parse(fflate.strFromU8(files["scene/state.json"]));
+      requireValue(Array.isArray(scene.instances) && scene.instances.length === 1,
+        "请保留原药房场景。这个工具只转换现有家具的位置和转向。");
+      const sceneSettings = { physics: scene.physics, constraints: scene.constraints };
+      requireValue(JSON.stringify(canonical(sceneSettings)) === JSON.stringify(canonical(workshop.sceneSettings)),
+        "请恢复场景的地面和物理设置，再转换家具布局。");
+      const [instance] = scene.instances;
+      const binding = instance.source?.binding;
+      requireValue(binding?.rootDocument?.digest === workshop.sourceDigest,
+        "这个文件不是从本包的 01_药房布局.botscene 保存的。");
+      const stableInstance = {
+        transform: instance.transform, initialState: instance.initialState,
+        simulationMode: instance.simulationMode, visible: instance.visible
+      };
+      requireValue(JSON.stringify(canonical(stableInstance)) === JSON.stringify(canonical(workshop.instanceState)),
+        "请把整间药房和机器人的初始状态恢复，再转换家具布局。");
+      const edits = binding.authoring?.elementEdits ?? [];
+      requireValue(Array.isArray(edits), "没有找到可识别的家具改动。");
+      const seen = new Set();
+      return edits.map(edit => {
+        const item = workshop.furniture[edit.elementPath];
+        requireValue(item && !seen.has(edit.elementPath),
+          "有改动不在转换范围内。请只选中整个柜子、椅子或中央桌进行移动和转向。");
+        seen.add(edit.elementPath);
+        const pose = edit.transform;
+        const poseOnly = Object.keys(edit).every(key => ["elementPath", "transform", "visible"].includes(key));
+        requireValue(poseOnly && edit.visible == null && pose && Object.keys(pose).every(key =>
+          key === "translationM" || key === "rotationXyzw"),
+          "只支持家具的平面位置和转向。请撤回隐藏、删除或结构改动。");
+        const xyz = pose.translationM ?? item.position;
+        const xyzw = pose.rotationXyzw ?? [item.rotation[1], item.rotation[2], item.rotation[3], item.rotation[0]];
+        requireValue(isVector(xyz, 3) && isVector(xyzw, 4) && near(Math.hypot(...xyzw), 1),
+          "家具的位置或转向记录无效。请回到 Studio 重新保存。");
+        const [x, y, z] = xyz;
+        const [qx, qy, qz, qw] = xyzw;
+        requireValue(near(z, item.position[2]) && near(qx, 0) && near(qy, 0),
+          item.name + "：请保留原高度，只在地面上移动或转向。");
+        requireValue(x >= 0 && x <= 3.6 && y >= 0 && y <= 6.4,
+          item.name + "：请把家具的中心移回房间内。");
+        return { item, position: [x, y, item.position[2]], rotation: [qw, 0, 0, qz] };
+      });
+    }
+
+    function buildProject(bytes) {
+      const edits = readEdits(bytes);
+      const decoded = atob(workshop.botlabZip);
+      const templateBytes = new Uint8Array(decoded.length);
+      for (let index = 0; index < decoded.length; index++) templateBytes[index] = decoded.charCodeAt(index);
+      const zip = fflate.unzipSync(templateBytes);
+      const xmlPath = "assets/pharmacy/pharmacy.xml";
+      let xml = fflate.strFromU8(zip[xmlPath]);
+      for (const { item, position, rotation } of edits) {
+        const marker = xml.indexOf(item.tag);
+        requireValue(marker >= 0 && xml.indexOf(item.tag, marker + 1) < 0, "工程模板中的家具位置无法定位。");
+        let updatedTag = item.tag;
+        if (!position.every((value, index) => near(value, item.position[index]))) {
+          updatedTag = updatedTag.replace(/ pos="[^"]+"/, ' pos="' + position.join(" ") + '"');
+        }
+        const sameRotation = rotation.every((value, index) => near(value, item.rotation[index])) ||
+          rotation.every((value, index) => near(value, -item.rotation[index]));
+        if (!sameRotation) updatedTag = updatedTag.replace(/ quat="[^"]+"/, ' quat="' + rotation.join(" ") + '"');
+        xml = xml.slice(0, marker) + updatedTag + xml.slice(marker + item.tag.length);
+      }
+      zip[xmlPath] = fflate.strToU8(xml);
+      return { archive: fflate.zipSync(zip, { level: 3 }), edits };
+    }
+
+    const form = document.querySelector("#converter");
+    const button = document.querySelector("#convert");
+    const result = document.querySelector("#result");
+    const input = document.querySelector("#scene");
+    input.addEventListener("change", () => {
+      result.textContent = "";
+      result.removeAttribute("data-error");
+    });
+    form.addEventListener("submit", async event => {
+      event.preventDefault();
+      const file = input.files[0];
+      if (!file) return;
+      button.disabled = true;
+      result.removeAttribute("data-error");
+      result.textContent = "正在转换…";
+      try {
+        requireValue(/\.botscene$/i.test(file.name), "请选择扩展名为 .botscene 的文件。");
+        requireValue(file.size <= sceneLimit, "场景文件过大。请从本包的药房布局开始编辑。");
+        const { archive, edits } = buildProject(new Uint8Array(await file.arrayBuffer()));
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(new Blob([archive], { type: "application/zip" }));
+        link.download = file.name.replace(/\.botscene$/i, "") + "_布局仿真.botlab.zip";
+        document.body.append(link);
+        link.click();
+        link.remove();
+        setTimeout(() => URL.revokeObjectURL(link.href), 10000);
+        const furniture = edits.map(({ item }) => item.name).join("、");
+        result.textContent = furniture ? "已生成 BotLab 工程。应用的位置或转向：" + furniture : "已生成 BotLab 工程，使用参考家具布局。";
+      } catch (error) {
+        result.setAttribute("data-error", "");
+        result.textContent = error instanceof Error ? error.message : "转换失败。请在 Studio 重新保存布局。";
+      } finally {
+        button.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
